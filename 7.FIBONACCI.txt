@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Fibo {
+static long k(int l){
+    if((l == 0)||(l == 1)){
+        return l;
+    }
+    else{
+        return k(n-1)+k(n-2);
+    }
+}
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int a = sc.nextInt(); 
+        
+
+        
+        for(int b = a; b >= 0; b--){
+            for(int c = 0; c <= b; c++){
+                System.out.print(k(c) +"\t");
+            }System.out.print("\n");
+        }
+    }
+    
+}

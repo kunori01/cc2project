@@ -1,0 +1,54 @@
+
+package calcmethod;
+import java.util.Scanner;
+
+public class CalcMethod {
+
+    public static void main(String[] args) {
+        display();
+    }
+    
+    static int getFirstNumber() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter First Number: ");
+        int a = input.nextInt();
+        return a;
+        
+    }
+    
+    static int getSecondNumber() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Second Number: ");
+        int b = input.nextInt();
+        return b;
+    }
+    
+    static int getSum(int a, int b){
+        return a + b;
+    }
+    
+     static int getDiff(int a, int b){
+        return a - b;
+    }
+     
+     
+     static int getProd(int a, int b){
+        return a * b;
+    }
+     
+     static double getQuo(double a, double b){
+        return a / b;
+    }
+     
+    static void display(){
+        int a = getFirstNumber();
+        int b = getSecondNumber();
+        
+        System.out.println("The sum is " + getSum(a,b));
+        System.out.println("The difference is " + getDiff(a,b) );
+        System.out.println("The Product is " + getProd(a,b));
+        System.out.println("The Quotient is " + getQuo(a,b));
+        
+    }
+    
+}

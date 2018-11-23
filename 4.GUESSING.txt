@@ -1,0 +1,26 @@
+import java.util. Scanner;
+class guessing{
+public static void main(String[]args){
+Scanner sc = new Scanner (System.in);
+String king;
+int a=69;
+int x;
+do{
+System.out.print("\n pls. enter a number: ");
+x=sc.nextInt();
+if(a>x & x%2==0){
+	System.out.print("\n it is lower than the number");
+	System.out.print("\n its an even number");
+}
+else if (a<x){
+	System.out.print("\n the number is higher");
+	System.out.print("\n its an odd number");
+}
+else{
+	System.out.print("\n correct");
+}
+}
+while(a!=x);{
+}
+}
+}
